@@ -1,7 +1,9 @@
 // IMPORTS FROM PACKAGES
 const express = require("express");
 const mongoose = require("mongoose");
+const dotenv = require('dotenv');
 const adminRouter = require("./routes/admin");
+dotenv.config();
 
 // IMPORTS FROM OTHER FILES
 const authRouter = require("./routes/auth");
