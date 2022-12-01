@@ -76,9 +76,10 @@ authRouter.post("/", async (req, res) => {
         .status(400)
         .json({ msg: "Namba ulioingiza haijasajiliwa" });
     }
-    res.json(user); 
+    res.json(user);
+ 
   } catch (e) {
-    res.status(500).json({ error: e.message });
+    res.status(500).json({ error: 'Namba ulioingiza haijasajiliwa' });
   }
 });
 

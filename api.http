@@ -1,0 +1,17 @@
+POST http://139.144.69.227:3001/api/signin
+Content-Type: application/json
+
+{
+    "phone":"555",
+    "password":"555"
+}
+
+###
+
+POST http://139.144.69.227:3001/api/signin
+Content-Type: application/json
+
+{
+    "phone":"555",
+    "password":"555"
+}
