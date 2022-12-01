@@ -71,7 +71,12 @@ authRouter.post("/", async (req, res) => {
   try {
     const phone = req.body;
     const user = await User.find(phone);
-    res.json(user);
+    if (!user) {
+      return res
+        .status(400)
+        .json({ msg: "Namba ulioingiza haijasajiliwa" });
+    }
+    res.json(user); 
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
